@@ -1,4 +1,48 @@
 .main {
-    height: calc(100vh - 158px);
-    padding: 20px;
+    &-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .section-list {
+            margin-bottom: 50px;
+
+            &-title {
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            &-cont {
+                .category {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 50px;
+                    padding: 50px 0;
+    
+                    &-list {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background: #eee;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                    }
+                }
+
+                .item {
+                    display: grid;
+                    grid-template-columns: repeat(4, 4fr);
+                    gap: 20px;
+
+                    &-list {
+                        background: #eee;
+                        height: 200px;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

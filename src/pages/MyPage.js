@@ -1,11 +1,11 @@
-const Sub = () => {
+const MyPage = () => {
     return (
       <>
         <div>
-          서브
+          마이페이지
         </div>
       </>
     )
   };
   
-  export default Sub;
+  export default MyPage;

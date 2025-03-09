@@ -1,18 +1,19 @@
 import '../styles/components/header.scss';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
       <>
         <header className='header'>
           <div className='header-wrap'>
-            <div className='header-wrap-left'>
-              <h1>
+            <div className='header-wrap-list'>
+              <Link to="/">
                 로고
-              </h1>
+              </Link>
               <input type='search' placeholder='내용을 입력해주세요'/>
             </div>
-            <div className='header-wrap-right'>
-              마이페이지
+            <div className='header-wrap-list'>
+              <Link to="/mypage">마이페이지</Link>
             </div>
           </div>
         </header>

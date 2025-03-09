@@ -3,14 +3,12 @@ import Footer from '../components/Footer';
 
 const DefaultLayout = ({children}) => {
     return (
-      <>
-        <div>
-            <Header/>
-                <main>
-                    {children}
-                </main>
-            <Footer/>
-        </div>
+      <>  
+          <Header/>
+              <main>
+                  {children}
+              </main>
+          <Footer/>
       </>
     )
   };
